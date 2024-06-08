@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gaming Calculator</h1>
+        <form id="bettingForm" onsubmit="return calculate()">
+            <div class="form-group">
+                <label for="balance">Balance Amount:</label>
+                <input type="text" id="balance" name="balance" required>
+            </div>
+            <div class="form-group">
+                <label for="initial_value">Bet Price:</label>
+                <input type="text" id="initial_value" name="initial_value" required>
+            </div>
+            <div class="form-group">
+                <label for="percentage">Percentage increase after every loss:</label>
+                <input type="text" id="percentage" name="percentage" required>
+            </div>
+            <div class="form-group">
+                <label for="iterations">No. of Bets:</label>
+                <input type="text" id="iterations" name="iterations" required>
+            </div>
+            <div class="form-group">
+                <label for="multiplier">Multiplier of Profit:</label>
+                <input type="text" id="multiplier" name="multiplier" required>
+            </div>
+            <input type="submit" value="Calculate">
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
